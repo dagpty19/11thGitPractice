@@ -10,8 +10,8 @@ public class TaskManagerApp {
             System.out.println("1. Add Task");
             System.out.println("2. Mark Task as Completed");
             System.out.println("3. List Tasks");
-            System.out.println("4. Exit");
-            System.out.println("5. Export Tasks to File");
+            System.out.println("4. Export Tasks to File");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
 
             String choice = scanner.nextLine();
@@ -38,11 +38,11 @@ public class TaskManagerApp {
                 case "3":
                     taskList.displayTasks();
                     break;
-                case "4":
+                case "5":
                     System.out.println("Exiting Task Manager. Goodbye!");
                     scanner.close();
                     return;
-                case "5":
+                case "4":
                     System.out.print("Enter filename to export to (e.g., tasks.txt): ");
                     String filename = scanner.nextLine();
                     taskList.exportTasksToFile(filename);
