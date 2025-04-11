@@ -24,3 +24,4 @@ public class Task {
         return "Task: " + description + (completed ? " [Completed]" : " [Pending]");
     }
 }
+
