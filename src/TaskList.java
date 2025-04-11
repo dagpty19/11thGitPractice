@@ -9,8 +9,8 @@ public class TaskList {
         this.tasks = new ArrayList<>();
     }
 
-    public void addTask(String description) {
-        tasks.add(new Task(description));
+    public void addTask(String description, int priority) {
+        tasks.add(new Task(description, priority));
     }
 
     public void markTaskAsCompleted(int index) {
@@ -30,7 +30,7 @@ public class TaskList {
             System.out.println("No tasks in the list.");
         } else {
             for (int i = 0; i < tasks.size(); i++) {
-                System.out.println((i + 1) + ". " + tasks.get(i));
+                System.out.println((i + 1) + ". " + tasks.get(i).toString());
             }
         }
     }

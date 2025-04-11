@@ -19,7 +19,10 @@ public class TaskManagerApp {
                 case "1":
                     System.out.print("Enter task description: ");
                     String description = scanner.nextLine();
-                    taskList.addTask(description);
+                    System.out.print("Enter task priority (1-5): ");
+                    int priority = scanner.nextInt();
+                    scanner.nextLine();
+                    taskList.addTask(description, priority);
                     System.out.println("Task added.");
                     break;
                 case "2":
